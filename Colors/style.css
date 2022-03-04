@@ -1,0 +1,22 @@
+#container{
+    width: 100%;
+    height: 100%;
+}
+.btn{
+    margin: auto;
+    padding-top: 20%;
+}
+#btn{
+    display: flex;
+    margin: auto;
+    padding: 0.8rem;
+    border: 1px solid #343a40;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 3px 3px black;
+}
+#btn:hover{
+    background-color: #343a40;
+    color: white;
+}
