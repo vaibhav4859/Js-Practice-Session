@@ -1,0 +1,11 @@
+let days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
+let date = new Date();
+let day = date.getDay();
+let hr = date.getHours();
+let time = hr >= 12 ? "PM" : "AM";
+hr = hr % 12;
+let minutes = date.getMinutes();
+document.querySelector("#day").textContent = days[day];
+document.querySelector("#hour").textContent = hr;
+document.querySelector("#min").textContent = minutes;
+document.querySelector("#ampm").textContent = time;
