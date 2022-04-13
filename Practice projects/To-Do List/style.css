@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 1px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #e27398;
+    border-radius: 10px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(218, 121, 137);
+    border-radius: 1px;
+}
+
+body {
+    background: linear-gradient(to right, #E22865, #37ADCD);
+    font-family: 'Fredoka One', cursive;
+}
+
+#logo {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+    padding: 7px;
+    color: white;
+}
+
+#input {
+    display: flex;
+}
+
+#Submit {
+    width: 70px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#listinput {
+    width: 250px;
+    padding-left: 7px;
+    border: none;
+    outline: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#container {
+    width: 1280px;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+}
+
+.list {
+    width: 600px;
+    margin: auto;
+}
+
+.item {
+    display: flex;
+    width: 500px;
+    height: auto;
+    justify-content: space-between;
+    background-color: white;
+    color: #454545;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.item i {
+    cursor: pointer;
+}
+
+.tick {
+    margin-right: 10px;
+}
