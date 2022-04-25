@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(0.50turn, black, #33adff, black);
+    overflow-y: hidden;
+    font-family: 'Comfortaa', cursive;
+}
+
+main {
+    width: 1280px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#weather-img {
+    width: 200px;
+}
+
+#weather-img img {
+    width: 100%;
+}
+
+#weather-details {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    color: white;
+    user-select: none;
+}
+
+#weather-details h1 {
+    font-size: 4rem;
+    padding: 0 10px;
+}
+
+#weather-details p {
+    display: none;
+    color: white;
+}
+
+#img {
+    opacity: 0;
+}
+
+#degrees {
+    opacity: 0;
+}
+
+#bar {
+    display: block;
+    opacity: 0;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#city-name {
+    opacity: 0;
+}
+
+#description {
+    opacity: 0;
+}
+
+#toggle {
+    position: absolute;
+    top: 0;
+    border: 1px solid lightgray;
+    padding: 8px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: lightgray;
+}
+
+#slider {
+    left: 0;
+    position: absolute;
+    width: 375px;
+    height: 100vh;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding-top: 25px;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 20px;
+
+}
+
+#slider input,
+#slider select,
+#slider option {
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid white;
+    outline: none;
+}
+
+#slider select,
+#slider option {
+    font-style: italic;
+}
+
+#slider button {
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: #66c2ff;
+    background-color: white;
+    transition: 0.3s ease-out;
+    outline: none;
+}
+
+#slider button:hover {
+    background-color: black;
+}
+
+#slider h3 {
+    font-size: 1.2rem;
+}
+
+.slide-in {
+    -webkit-animation: slide-in 0.5s forwards;
+    animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+    -webkit-animation: slide-out 0.5s forwards;
+    animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.animatee {
+    opacity: 1 !important;
+    transition: opacity 1.6s ease 0s;
+}

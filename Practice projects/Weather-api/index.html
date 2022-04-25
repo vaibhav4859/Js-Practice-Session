@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png"
+        href="https://raw.githubusercontent.com/iamcodefoxx/Weather-App/main/weather_icon.png" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <main>
+        <div id="weather-img">
+            <img id="img">
+        </div>
+        <div id="weather-details">
+            <h1><span id="degrees"></span></h1>
+            <h1 id="bar"></h1>
+            <h1 id="city-name"></h1>
+            <p id='description'></p>
+        </div>
+        <div class="slide-in" id="slider">
+            <h3>Search Weather</h3>
+            <input id="city" type="text" placeholder="City">
+            <select name="state" id="state">
+                <option style="color:gray">State</option>
+            </select>
+            <button type="submit" id="searchWeather"><i class="fas fa-search" id="searchWeather"></i> Search</button>
+            <span id="isValid"></span>
+        </div>
+    </main>
+    <button id="toggle"><i class="fas fa-search"></i></button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
